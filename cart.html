@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shopping Cart - Ladies Fashion</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Ladies Fashion</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cart.html" class="active">Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="content">
+    <section class="cart">
+      <h2>Your Shopping Cart</h2>
+      <div id="cartItems">
+        <!-- JavaScript will inject cart items here -->
+        <p>Your cart is currently empty.</p>
+      </div>
+
+      <!-- ✅ Only one cart summary -->
+      <section id="cartSummary" class="cart-summary">
+        <h3>Total: KES <span id="totalAmount">0.00</span></h3>
+        <button id="checkoutBtn">Proceed to Checkout</button>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ladies Fashion. All rights reserved.</p>
+  </footer>
+</body>
+</html>
